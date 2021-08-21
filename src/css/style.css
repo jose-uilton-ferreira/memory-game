@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: #097AFF;
+}
+
+.btn {
+  padding: 10px 40px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.btn--primary {
+  color: white;
+  background: #FF8A00;
+}
+
+.scene {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scene--start, .scene--game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene__content {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+.game-options {
+  text-align: center;
+}
+
+.game-options__dificulty {
+  font-size: 1.5rem;
+}
+
+.game-options__dificulty:last-child {
+  margin-right: 0;
+}
+
+.dificulty__option {
+  display: inline;
+  margin-right: 10px;
+}
+
+.dificulty__radio {
+  width: 20px;
+  height: 20px;
+}
+
+.memory-game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.memory-game--easy .memory-game__card {
+  width: calc(20% - 10px);
+  height: 200px;
+}
+
+.memory-game--normal .memory-game__card {
+  width: calc(20% - 10px);
+  height: 150px;
+}
+
+.memory-game--hard .memory-game__card {
+  width: calc(20% - 10px);
+  height: 100px;
+}
+
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.memory-game__card {
+  position: relative;
+  margin: 5px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.card__icon {
+  max-width: 100px;
+}

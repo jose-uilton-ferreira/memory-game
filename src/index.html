@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Memory Card Game</title>
+  </head>
+  <body>
+    
+    <div class="scene scene--start" id="scene-start">
+
+      <div class="scene__content">
+
+        <h1 class="title">Memory Card Game</h1>
+        <div class="game-options">
+          <button class="game-options__start btn btn--primary" id="start-game">Start</button>
+          <div class="game-options__dificulty">
+
+            <div class="dificulty__option">
+              <label for="easy">Easy</label>
+              <input type="radio" name="dificulty" id="easy" class="dificulty__radio">
+            </div>
+
+            <div class="dificulty__option">
+              <label for="normal">Normal</label>
+              <input type="radio" name="dificulty" id="normal" class="dificulty__radio" checked>
+            </div>
+
+            <div class="dificulty__option">
+              <label for="hard">Hard</label>
+              <input type="radio" name="dificulty" id="hard" class="dificulty__radio">
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- scene content -->
+
+    </div><!-- scene -->
+
+    <div class="scene scene--game" id="scene-game">
+
+      <div class="memory-game memory-game--easy" id="memory-game"></div>
+
+    </div>
+
+    <div class="scene scene--game-over" id="scene-game-over">
+      <div class="scene__content">
+        <h2>Game Over</h2>
+        <button class="btn btn--primary" id="try-again-game">Try Again</button>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
