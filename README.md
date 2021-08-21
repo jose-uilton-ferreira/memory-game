@@ -1,5 +1,3 @@
-
-
 # Icon used
 <a href="https://iconscout.com/icons/python" target="_blank">Python Flat Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
 
